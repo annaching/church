@@ -1,0 +1,164 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image:url(media/body_bg.png);
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+#header {
+    position: relative;
+    background-image: url(media/header_bg.png);
+    width: 980px;
+    height: 650px;
+}
+
+#header div {
+    float: right;
+    width: 60px;
+    height: 180px;
+    margin-top: 200px;
+}
+
+#header h1 {
+    float: right;
+    width: 200px;
+    height: 70px;
+    font-family: Microsoft JhengHei;
+    color: white;
+    font-weight: normal;
+    font-size: 50px;
+    margin-top: 535px;
+    margin-right: 50px;
+}
+
+#header ul {
+    position: relative;
+    left: 60px;
+    top: 45px;
+}
+
+#header li {
+    list-style-type:none;
+    float: left;
+}
+
+#header li a {
+    display: block;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration:none;
+    text-align:center;
+    font-family: Microsoft JhengHei;
+    color: #83268A;
+    font-size: 17px;
+}
+
+#header li a:hover{
+   color: #FC147D;
+}
+
+/* =======內容區1======== */
+#content {
+    position: relative;
+    width: 980px;
+    height: 650px;
+    background-image: url(media/content_bg.png);
+}
+
+#content div {
+    float: right;
+    width: 60px;
+    height: 180px;
+    margin-top: 200px;
+}
+
+#content p {
+    float: left;
+    width: 520px;
+    height: 220px;
+    color: black;
+    font-family: Microsoft JhengHei;
+    margin-top: 50px;
+}
+
+#content h1 {
+    float: left;
+    width: 250px;
+    height: 155px;
+    margin-top: 65px;
+    margin-left: 30px; 
+}
+
+#content h2 {
+    float: left;
+    font-family: Microsoft JhengHei;
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-left: 102px;
+}
+
+
+/* =======底部區======== */
+#footer {
+    clear: both;
+    position: relative;
+    background-image: url(media/footer_bg.png);
+    width: 980px;
+    height: 650px;
+}
+
+#footer div {
+    float: right;
+    width: 60px;
+    height: 180px;
+    margin-top: 200px;
+}
+
+
+#footer p {
+    float: left;
+    width: 630px;
+    height: 310px;
+    font-family: Microsoft JhengHei;
+    color: floralwhite;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+
+#footer h1 a {
+    float: right;
+    width: 90px;
+    height: 20px;
+    margin-top: 80px;
+    margin-right: 270px;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    color:floralwhite;
+}
+
+#footer h1 a:hover {
+    color: #FFF2CC;
+}
+
+
+
+
+

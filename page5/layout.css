@@ -1,0 +1,166 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image: url(media/body_bg.png);
+    background-repeat: repeat;
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+
+#header {
+    width: 980px;
+    height: 330px;
+    position: relative;
+    background-image: url(media/header_bg.png);
+}
+
+#header ul {
+    position: absolute;
+    left:360px;
+    top:30px;
+    
+}
+#header li {
+    list-style-type: none;
+    float: left;
+}
+
+#header li a {
+    display: block;
+    width: 115px;
+    height:40px;
+    line-height: 40px;
+    text-decoration:none;
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: #203864;   
+    
+}
+#header img {
+    width:0px;
+    position:absolute;
+    transition: 0.5s;
+}
+
+#header li a:hover + img {
+    width:110px;
+    transition: 0.5s;
+}
+
+#header h3 {
+    position: absolute;
+    float: left;
+    font-size: 40px;
+    font-family: Microsoft JhengHei;
+    color: white;
+    left: 690px;
+    top:240px;
+}
+
+/* =======內容區======== */
+#content {
+    height: 580px;
+    width: 980px;
+    float: left;
+    background-image: url(media/content_bg.png);
+    background-repeat: repeat-x;
+}
+#content h1 {
+    
+    text-align: center;
+    margin: 8px 0;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: #FF6699
+}
+
+#content div {
+    float:left;
+    width: 245px;
+    text-align: center;
+    margin: 0px 0 40px 0;
+}
+
+#content img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+#content a {
+    text-decoration-line: none;
+    color: #FF6600;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+}
+
+#content a:hover {
+    color: brown;
+}
+
+#content h2 {
+    float: left;
+    text-align: center;
+    margin: 20px 0 10px 60px;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: #FF6699
+}
+
+#content p {
+    float: left;
+    font-family: Microsoft JhengHei;
+    margin: 5px 495px 0 50px;
+    
+}
+
+#content h3 {
+    float: left;
+    text-align: center;
+    margin: -270px 0 0 530px;
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: #FF6699
+}
+
+#content iframe {
+    float: left;
+    margin: -230px 0 0 520px;;
+}
+
+#content h4 a {
+    position: relative;
+    float: right;
+    margin: 40px 60px 0 0;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    color:#1F4E57;
+}
+
+/* =======底部區======== */
+#footer {
+    clear: both;
+    height: 30px;
+    font-family: Microsoft JhengHei;
+    color: #0C0F12;
+    background-color: #6AC3FF;
+    text-align: center;
+    padding-top: 10px;
+}

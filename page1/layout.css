@@ -1,0 +1,97 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-color: #FFF5E7;
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+
+#header {
+    width: 980px;
+    height: 165px;
+    position: relative;
+    background-image:url(media/headerbg.png);
+}
+
+#header h3 {
+    position: absolute;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 50px;
+    color: white;
+    left: 250px;
+    top:43px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#header ul{
+    position: absolute;
+    left:730px;
+    top:100px;
+}
+
+#header li{
+    list-style-type: none;
+    float: left;    
+ }
+
+#header li a{
+    display: block;
+    width: 68px;
+    height: 36px;
+    line-height: 38px;
+    text-decoration: none;
+    color:#385723;
+    text-align: center;
+    font-size: 15px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    background-image: url(media/header_list.png);
+}
+
+#header li a:hover{
+    background-image: url(media/header_list_hover.png);
+}
+
+/* =======內容區======== */
+#content {
+    position: relative;
+    width: 980px;
+    height: 650px;
+    padding: 0;
+    background-image: url(media/content_bg.png);
+}
+
+#content img:hover {
+    width: 78px;
+    height: 71px;
+}
+
+/* =======底部區======== */
+#footer {
+    height: 60px;
+    background-color: #FC788E;
+}
+
+#footer p{
+    text-align: center;
+    color: #333F50;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 11px;
+}

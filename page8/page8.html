@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Photo Overview</title>
+    <link href="layout.css" rel="stylesheet" type="text/css"/>
+    <style>
+        /*div    {clear:left;}*/
+        .small {
+            width:60px; 
+            float:left;
+            margin:2px; 
+            padding:2px; 
+            border: 1px black solid;}
+        #big {height: 330px;
+              margin:2px; 
+              padding:2px; 
+              border: 1px black solid;}
+    </style>
+    <script>
+      setInterval(play, 5000);  // 每隔 5 秒呼叫 1 次 play()
+      var index=0;              // 用來控制每次要顯示的圖片索引    
+      
+      function play(){
+        // 取得縮圖的 img 元素集合
+	    var imgs = document.getElementById("thumbs"). // 取得 id="thumbs" 的 div 區塊
+        getElementsByTagName("img"); // 取得區塊中所有 img 子元素
+          
+        // 取得大圖的 img 元素
+        var bigImg = document.getElementById("big");
+        
+        index++;  // 遞增索引值, 以播下一張照片
+        
+        // 若索引值超過範圍, 則設為0, 表示再重頭開始播放
+        if(index == imgs.length) index=0; 
+        
+        // 將大圖 img 的 src 屬性設為小圖之 src 屬性值
+        bigImg.setAttribute("src", imgs[index].getAttribute("src"));
+      }
+    </script>
+    
+</head>
+    
+<body>
+<div id="wrapper">
+    <div id="header">
+        <h1>我所愛的，你何其美好！何其可悅，使人歡暢喜樂。</h1>
+        <a href="../page1/home.html"target="_blank">>>了解更多</a>
+    </div>
+    <div id="content">
+        <h1>Chapels Photo Overview</h1>
+        <div id="thumbs">
+             <img class="small" src="media/content_img1.png">
+             <img class="small" src="media/content_img2.png">
+            <img class="small" src="media/content_img3.png">
+            <img class="small" src="media/content_img4.png">
+            <img class="small" src="media/content_img5.png">
+            <img class="small" src="media/content_img6.png">
+            <img class="small" src="media/content_img7.png">
+            <img class="small" src="media/content_img8.png">
+            <img class="small" src="media/content_img9.png">
+            <img class="small" src="media/content_img10.png">
+            <img class="small" src="media/content_img11.png">
+            <img class="small" src="media/content_img12.png">
+            <img class="small" src="media/content_img13.png">
+            <img class="small" src="media/content_img14.png">
+            <img class="small" src="media/content_img15.png">
+            <img class="small" src="media/content_img16.png">
+            <img class="small" src="media/content_img17.png">
+            <img class="small" src="media/content_img18.png">
+            <img class="small" src="media/content_img19.png">
+            <img class="small" src="media/content_img20.png">
+            <img class="small" src="media/content_img21.png">
+            <img class="small" src="media/content_img22.png">
+            <img class="small" src="media/content_img23.png">
+            <img class="small" src="media/content_img24.png">
+            <img class="small" src="media/content_img25.png">
+            <img class="small" src="media/content_img26.png">
+            <img class="small" src="media/content_img27.png">
+            <img class="small" src="media/content_img28.png">
+            <img class="small" src="media/content_img29.png">
+            <img class="small" src="media/content_img30.png">
+        </div>
+        
+        <h2>
+            <img id="big" src="media/content_img1.png">
+        </h2>
+        
+    </div>
+    
+    <div id="footer">
+        <marquee scrollamount="4" behavior="alternate">互敬互愛心連心，心心相印心貼心，互讓互勉常談心，信心決心永遠新。</marquee>
+    </div>
+    
+</div>
+</body>
+</html>

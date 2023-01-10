@@ -1,0 +1,182 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image: url(media/body_bg.png);
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+
+#header {
+    width: 980px;
+    height: 290px;
+    background-image:url(media/header_bg.png);
+    position: fixed;
+    top: 0;
+    z-index:1;
+}
+
+#header h3 {
+    font-family: Microsoft JhengHei;
+    font-size: 35px;
+    color: #2C6078;
+    margin: 60px 0 0 190px;
+}
+
+#header img {
+    display: block;
+    margin: -90px 0 0 30px;
+}
+
+#header ul{
+    position: absolute;
+    top:250px;
+    left:2px;
+}
+#header li{
+    list-style-type: none;
+    float: left;
+    
+}
+
+#header li a{
+    display: block;
+    width: 195px;
+    height:40px;
+    line-height: 40px;    
+    text-decoration:none;
+    text-align: center;
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: white;   
+    
+}
+
+#header li a:hover{
+   color: aqua;
+}
+
+/* =======內容區======== */
+#content {
+    position: absolute;
+    top:290px;
+    width: 980px;
+    background-color: #F1EDC7;
+    background-repeat: repeat;
+    
+}
+
+#content h1 {
+    position: relative;
+    background-image: url(media/content_img1.png);
+    width: 690px;
+    height: 40px;
+    text-indent:-9999px;
+    margin: 20px 0 10px 150px;
+}
+
+#content img{
+    float: left;
+    width: 245px;
+    height: 180px;
+    margin: 15px 15px 10px 175px;
+}
+
+#content p {
+    position: relative;
+    font-family: Microsoft JhengHei;
+    font-size: 18px;
+    color: #843C0C;
+    margin: 22px 160px 5px 165px;
+}
+
+#content hr{
+    margin: 20px 130px 0 130px;
+}
+
+#content h2 {
+    position: relative;
+    background-image: url(media/content_img3.png);
+    width: 684px;
+    height: 49px;
+    text-indent:-9999px;
+    margin: 20px 0 10px 150px;  
+}
+
+#content h3 {
+    position: relative;
+    background-image: url(media/content_img4.png);
+    width: 245px;
+    height: 170px;
+    text-indent:-9999px;
+    float: right;
+    margin: 25px 160px 10px 15px;
+}
+
+#content h4 {
+    position: relative;
+    background-image: url(media/content_img5.png);
+    width: 680px;
+    height: 40px;
+    text-indent:-9999px;
+    margin: 20px 0 10px 150px;  
+}
+
+#content h5 {
+    position: relative;
+    background-image: url(media/content_img6.png);
+    width: 220px;
+    height: 240px;
+    text-indent:-9999px;
+    float: right;
+    margin: 25px 160px 10px 15px;
+}
+
+#content h6 {
+    font-family: Microsoft JhengHei;
+    font-size: 18px;
+    font-weight: normal;
+    color: #C00000;
+    margin: 50px 160px 5px 165px;
+}
+
+#content a {
+    position: relative;
+    float: right;
+    margin: 15px 130px 0 0;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    color:#1F4E57;
+}
+
+#content a:hover {
+    color: brown;
+}
+
+/* =======底部區======== */
+#footer {
+    position: absolute;
+    top:2513px;
+    bottom: 0;
+    width: 980px;
+    height: 40px;
+    background-color: #3C435F;
+}
+
+#footer a {
+    display: inline-block;
+    margin: 5px 105px 0 105px;
+}
+

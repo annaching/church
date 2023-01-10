@@ -1,0 +1,151 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image: url(media/body_bg.png);
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+
+#header {
+    width: 980px;
+    height: 330px;
+    position: relative;
+    background-image: url(media/header_bg.png);
+}
+
+#header ul{
+    position: absolute;
+    left:70px;
+    top:30px;
+}
+#header li{
+    list-style-type: none;
+    float: left;
+    
+}
+
+#header li a{
+    display: block;
+    width: 120px;
+    height:40px;
+    line-height: 40px;    
+    text-decoration:none;
+    text-align: center;
+    background-image: url(media/header_listbg.png);
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    color: #203864;   
+    
+}
+
+#header li a:hover{
+    background-image: url(media/header_listbg_hover.png);
+}
+
+#header h3{
+    position: absolute;
+    float: left;
+    font-size: 40px;
+    font-family: Microsoft JhengHei;
+    color: white;
+    left: 30px;
+    top:185px;
+}
+
+
+
+/* =======左側選單區======== */
+#sidebar_left {
+    width: 180px;
+    float: left;
+    padding-left: 15px;
+    background-color: #A8F0A8;
+    
+}
+
+#sidebar_left p {
+    line-height: 61px;
+    color: #c00000;
+    margin-left: 38px; 
+    font-family: Microsoft JhengHei;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#sidebar_left ul {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+#sidebar_left ul img {
+    display: block;
+    
+}
+
+#sidebar_left li a{
+    display:block;
+    text-decoration: none;
+    color: #0000FF;
+    font-family: Microsoft JhengHei;
+    padding:10px 45px 8px 10px;
+    text-align: center;
+}
+
+/* =======內容區======== */
+#content {
+    background-color: #E9F5B0;
+    width: 785px;
+    float: left;
+}
+
+#content h1 {
+    font-family: Microsoft JhengHei;
+    font-size: 30px;
+    color: #843C0C;
+    padding: 20px 0 2px 30px;
+}
+
+#content p{
+    float: left;
+    margin-left: 280px;
+    font-family: Microsoft JhengHei;
+    color: #5C4600;
+    font-size: 20px;
+}
+
+#content a {
+    position: relative;
+    float: right;
+    margin: -30px 70px 10px 0;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    color:#1F4E57;
+}
+
+#content a:hover {
+    color: brown;
+}
+
+/* =======底部區======== */
+#footer {
+    clear: both;
+    height: 30px;
+    font-family: Microsoft JhengHei;
+    color: #3C435F;
+    background-color: #BDD7EE;
+    text-align: center;
+    padding-top: 10px;
+}

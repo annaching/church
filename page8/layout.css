@@ -1,0 +1,96 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image:url(media/body_bg.png);
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+
+#header {
+    width: 980px;
+    height: 415px;
+    position:relative;
+    background-image:url(media/header_bg.png);
+}
+
+#header h1 {
+    float: right;
+    font-family: Microsoft JhengHei;
+    font-weight: normal;
+    font-size: 22px;
+    color: white;
+    margin: 20px 15px 310px 0;
+}
+
+#header a {
+    float: right;
+    font-family: Microsoft JhengHei;
+    font-weight: normal;
+    font-size: 15px;
+    color: white;
+    margin: 10px 25px 0 500px;
+}
+
+#header a:hover{
+   color: #FFF2CC;
+}
+
+/* =======內容區======== */
+#content {
+    position: relative;
+    width: 980px;
+    height: 500px;
+    background-image: url(media/content_bg.png);
+    background-repeat: repeat;
+}
+
+#content h1 {
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 30px;
+    color: #7B1D5A;
+    text-align: center;
+    padding: 25px 0 10px 0;
+}
+
+#content div {
+    float: left;
+    width: 350px;
+    margin: 40px 10px 0 50px;
+}
+
+#content h2 {
+    float: left;
+    margin: 30px 0 0 50px;
+}
+
+
+/* =======底部區======== */
+#footer {
+    clear: both;
+    height: 30px;
+    font-family: Microsoft JhengHei;
+    background-color: #765B44;
+    color: white;
+    font-size: 18px
+}
+
+
+
+
+
+
+

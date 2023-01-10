@@ -1,0 +1,143 @@
+/* 重置所有margin及padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* body 設定背景圖(色) */
+body {
+    background-image:url(media/body_bg.png);
+}
+
+
+/* 網頁內容最外層包裝, 主要是用margin來做左右置中 */
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* 以下是做佈局的設定 */
+/* =======標題區======== */
+#header ul {
+    position: absolute;
+    left: 60px;
+    top: 45px;
+}
+
+#header li{
+    list-style-type:none;
+}
+
+#header li a{
+    line-height:70px;
+    text-decoration:none;
+    text-align:center;
+    font-family: Microsoft JhengHei;
+    color: white;
+    font-size: 17px;
+}
+
+#header li a:hover{
+   color: #FC147D;
+}
+
+/* =======內容區1======== */
+#content1 {
+    position: relative;
+    width: 980px;
+    height: 300px;
+    background-image: url(media/content1_bg.png);
+    
+}
+
+#content1 img {
+    float: left;
+    width: 300px;
+    height: 220px;
+    margin: 30px 0 0 50px;
+}
+
+#content1 h1 {
+    position: absolute;
+    font-family: Microsoft JhengHei;
+    font-size: 22px;
+    font-weight: bold;
+    color: #223557;
+    margin: 25px 0 0 395px;
+}
+
+#content1 h2 {
+    position: absolute;
+    font-family: Microsoft JhengHei;
+    font-size: 17px;
+    font-weight: normal;
+    color: #6F2363;
+    margin: 70px 25px 0px 395px;
+    
+}
+
+/* =======內容區2======== */
+#content2 {
+    clear: both;
+    position: relative;
+    width: 980px;
+    height: 300px;
+    background-image: url(media/content2_bg.png);
+}
+
+#content2 h1 {
+    float: left;
+    width: 48px;
+    font-family: Microsoft JhengHei;
+    font-size: 30px;
+    font-weight: bold;
+    color: #1F4E57;
+    padding: 20px 0 0 40px;
+}
+
+#content2 div {
+    float: left;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+#content2 a {
+    position: relative;
+    float: right;
+    margin: 8px 15px 0 0;
+    font-family: Microsoft JhengHei;
+    font-size: 15px;
+    color:#1F4E57;
+}
+
+#content2 a:hover {
+    color: brown;
+}
+
+/* =======底部區======== */
+#footer {
+    clear: both;
+    position: relative;
+    height: 212px;
+    background-color: aquamarine;
+}
+
+#footer p {
+    font-family: Microsoft JhengHei;
+    color: #193237;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 100px 0 25px; 
+}
+
+#footer li {
+    font-family: Microsoft JhengHei;
+    color: #193237;
+    font-size: 18px;
+    margin: 5px 120px 0 55px;    
+}
+
+
+
+
